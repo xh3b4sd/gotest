@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	SelfLink = "/apis/provider.giantswarm.io/v1alpha1/namespaces/default/azureconfigs/fqs9e"
+	SelfLink = "/apis/provider.giantswarm.io/v1alpha1/namespaces/default/awsconfigs/6aben/status"
 )
 
 type Patch struct {
@@ -45,12 +45,12 @@ func main() {
 		c := k8srestconfig.Config{
 			Logger: logger,
 
-			Address:   "https://127.0.0.1:58476",
+			Address:   "https://127.0.0.1:52565",
 			InCluster: false,
 			TLS: k8srestconfig.TLSClientConfig{
-				CAFile:  "/Users/xh3b4sd/.config/opsctl/godsmack/certs/1521814978/ca.pem",
-				CrtFile: "/Users/xh3b4sd/.config/opsctl/godsmack/certs/1521814978/crt.pem",
-				KeyFile: "/Users/xh3b4sd/.config/opsctl/godsmack/certs/1521814978/key.pem",
+				CAFile:  "/Users/xh3b4sd/.config/opsctl/gauss/certs/1508360771/ca.pem",
+				CrtFile: "/Users/xh3b4sd/.config/opsctl/gauss/certs/1508360771/crt.pem",
+				KeyFile: "/Users/xh3b4sd/.config/opsctl/gauss/certs/1508360771/key.pem",
 			},
 		}
 
