@@ -9,9 +9,9 @@ import (
 	"github.com/giantswarm/microerror"
 )
 
-const path = "/Users/xh3b4sd/go/src/github.com/giantswarm/e2etests"
+const path = "/Users/xh3b4sd/go/src/github.com/giantswarm/api"
 
-const search = `var ([a-zA-Z]+) = microerror.New\("[ a-zA-Z]+"\)`
+const search = `var ([a-zA-Z0-9]+) = microerror.New\("[ a-zA-Z0-9]+"\)`
 
 const replace = `var $1 = &microerror.Error{
 	Kind: "$1",
